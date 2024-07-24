@@ -1,8 +1,4 @@
-from BankingSystem.Account import Account
-import random
-git 
-
-
+from Account import Account
 
 class BankingSystem(Account):
 
@@ -45,19 +41,20 @@ class BankingSystem(Account):
         pass
 
     def create_account(self):
+         
          print("Create Account")
-        temp = input("Enter your name:")
-        if temp == self.name:
+         temp = input("Enter your name:")
+         if temp == self.name:
             print("Your Account already exist please enter other name or proceed for account id generate",self.id)
-        else:
+         else:
             print("Create New account")
 
 
 
-        self.emailid = input("Enter your emailid:")
-        self.phoneno = int(input("Enter your phoneno:"))
-        self.pincode = int(input("enter your pincoe:"))
-        self.id = random.randint(0,80000)
-        print("Your acoount id :",self.id)
+            self.emailid = input("Enter your emailid:")
+            self.phoneno = int(input("Enter your phoneno:"))
+            self.pincode = int(input("enter your pincoe:"))
+            self.id = random.randint(0,80000)
+            print("Your acoount id :",self.id)
 
 

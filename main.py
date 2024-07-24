@@ -1,5 +1,5 @@
-from BankingSystem.BankingSystem import BankingSystem
-from BankingSystem.Account import Account
+from BankingSystem import BankingSystem
+from Account import Account
 
 
 print ("Welcome to the bank")
