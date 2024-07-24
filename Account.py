@@ -7,7 +7,7 @@ class Account:
         self.emailid=""
         self.pincode=[]
         self.id = [ ]
-        self.activity()
+        self.activity() 
 
     def activity(self):
         user_input = input("""Welcome to the bank.... Now how would you like to proceed?
@@ -34,6 +34,6 @@ class Account:
 
         else:
             print("Exit")
-            
+
         
 
