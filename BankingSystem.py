@@ -2,11 +2,10 @@ from Account import Account
 
 class BankingSystem(Account):
 
-
     def withdraw(self,amount):
-        temp = input("Enter your name")
+        temp = input("Enter your name :")
         if temp == self.name:
-            amount = int(input("Enter the amount"))
+            amount = int(input("Enter the amount :"))
             if amount < self.initial_deposit:
                 print("Insufficient Balance withdraw cancel")
             else:
@@ -56,5 +55,7 @@ class BankingSystem(Account):
             self.pincode = int(input("enter your pincoe:"))
             self.id = random.randint(0,80000)
             print("Your acoount id :",self.id)
+    def __str__(self):
+        return f"BankingSystem with balance: {self.initial_deposit}"
 
 

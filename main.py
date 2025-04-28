@@ -6,7 +6,9 @@ print ("Welcome to the bank")
 
 print("Create Your account")
 
-print(B = BankingSystem(1200))
+B = BankingSystem(1200)
+
+print(B)
 
 
 
