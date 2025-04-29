@@ -1,6 +1,7 @@
 from Account import Account
 
 class BankingSystem(Account):
+    '''BANKING PROCESS'''
 
     def withdraw(self,amount):
         temp = input("Enter your name :")
